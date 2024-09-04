@@ -1,6 +1,19 @@
 
-  <app-navbar></app-navbar>
-  <app-sidebar></app-sidebar>
-  <app-reportbox></app-reportbox >
-  <app-performance-box></app-performance-box>
-  <app-orders></app-orders>
+
+<div class="grid grid-cols-12 transition-all  delay-150 ease-in-out duration-1000"
+[ngClass]="variable ? ' bg-white ' : 'bg-gradient-to-r from-center-color to-right-color h-96 ' "
+>
+
+  <div class="xl:col-span-1 ">
+    <app-sidebar ></app-sidebar>
+  </div>
+
+  <div class="col-span-12 xl:col-span-11 ">
+    <app-navbar></app-navbar>
+    <app-reportbox></app-reportbox >
+      <app-performance-box></app-performance-box>
+      <app-orders></app-orders>
+  </div>
+
+</div>
+  
