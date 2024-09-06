@@ -13,6 +13,9 @@ import { PerBoxThreeComponent } from './components/performanceComponents/per-box
 import { PerBoxFourComponent } from './components/performanceComponents/per-box-four/per-box-four.component';
 import { PreBoxFiveComponent } from './components/performanceComponents/pre-box-five/pre-box-five.component';
 import { OrdersComponent } from './components/orders/orders.component';
+import { MainpageComponent } from './pages/mainpage/mainpage.component';
+import { PageoneComponent } from './pages/pageone/pageone.component';
+import { PagetwoComponent } from './pages/pagetwo/pagetwo.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { OrdersComponent } from './components/orders/orders.component';
     PerBoxThreeComponent,
     PerBoxFourComponent,
     PreBoxFiveComponent,
-    OrdersComponent
+    OrdersComponent,
+    MainpageComponent,
+    PageoneComponent,
+    PagetwoComponent
   ],
   imports: [
     BrowserModule,

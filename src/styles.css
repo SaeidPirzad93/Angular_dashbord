@@ -8,3 +8,11 @@
     font-family: "Myfont" ;
     src: url("assets/fonts/Vazirmatn-VariableFont_wght.ttf") format(opentype)
 }
+
+
+
+.Activate {
+    color : 'red';
+    background-color: #eee;
+    font-weight: bold;
+}

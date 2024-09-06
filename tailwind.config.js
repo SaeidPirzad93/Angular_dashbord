@@ -10,6 +10,8 @@ module.exports = {
         "center":true ,
       },
 
+     
+
       fontFamily:{
         vazirFont : ["Myfont"]
       },
