@@ -220,7 +220,7 @@
 <!-- xs->xl -->
 
 
-<div class="hidden xl:flex flex-1 w-24  h-[calc(100vh-2rem)] border border-gray-200 rounded-xl shadow-lg bg-gray-50 opacity-95  z-50 transition-all ease-in-out duration-500 hover:w-64 group py-4  hover:overflow-y-auto overflow-hidden     fixed top-6 right-6 left-5" >
+<div class="hidden xl:block w-24  h-[calc(100vh-2rem)] border border-gray-200 rounded-xl shadow-lg bg-gray-50 opacity-95 z-50 transition-all ease-in-out duration-500 hover:w-64 group py-4 hover:overflow-y-auto overflow-hidden fixed top-6 right-6 left-5" >
 
 <div class="flex justify-center items-center ">
       <div class="w-12 h-11  rounded-lg bg-gradient-to-r  from-center-color to-right-color fixed right-12 top-11 ">
@@ -231,10 +231,11 @@
          </div>
       </div>
 
-   <div class="mr-auto mt-7 ml-2 hidden ">
-      <svg class="w-7 h-7 text-red-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
-      </svg>
+   <div class="mr-auto mt-4 ml-2 hidden group-hover:block  cursor-pointer" (click)="this.FixeSide.emit()"  >
+      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+       </svg>
+       
    </div>
 </div>
 

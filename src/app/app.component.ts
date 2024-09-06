@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = 'dashboard';
 
   variable =false
+  pageFixed = false
   @HostListener('document:scroll')
   scrollFun(){
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
@@ -21,5 +22,13 @@ export class AppComponent implements OnInit {
   }
   ngOnInit(): void {
     initFlowbite();
+  }
+
+
+
+
+  Fside(){
+    console.log("clicked saeid")
+    this.pageFixed=(! this.pageFixed)
   }
 }
