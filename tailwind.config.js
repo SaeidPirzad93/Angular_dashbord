@@ -10,8 +10,7 @@ module.exports = {
         "center":true ,
       },
 
-     
-
+  
       fontFamily:{
         vazirFont : ["Myfont"]
       },
@@ -24,7 +23,13 @@ module.exports = {
           100 :"#475569"
          }, 
         }, 
+
+        screens : {
+          'maxSide': '1585px',
+        }
     },
+
+    
   },
   plugins: [
     require('flowbite/plugin'),

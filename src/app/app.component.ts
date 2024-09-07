@@ -8,18 +8,23 @@ import { initFlowbite } from 'flowbite';
 })
 export class AppComponent implements OnInit {
   title = 'dashboard';
-
   variable =false
   pageFixed = false
+
+
   @HostListener('document:scroll')
+
   scrollFun(){
-    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+      {
       this.variable = true
-    }
+      }
     else{
       this.variable =false
-    }
+      }
   }
+
+  
   ngOnInit(): void {
     initFlowbite();
   }

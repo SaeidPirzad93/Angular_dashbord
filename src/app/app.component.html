@@ -2,11 +2,13 @@
 
 <div class="grid grid-cols-12 transition-all  delay-150 ease-in-out duration-1000" [ngClass]="variable ? ' bg-white ' : 'bg-gradient-to-r from-center-color to-right-color h-96 ' ">
 
-  <div class="xl:col-span-1" [ngClass]="pageFixed ? ' xl:col-span-2' : 'xl:col-span-1'">
+  <div class="" 
+       [ngClass]="pageFixed ? 'xl:col-span-2' : 'xl:col-span-1 '">
     <app-sidebar (FixeSide)="Fside()" ></app-sidebar>
   </div>
 
-  <div class="col-span-12 xl:col-span-11"  [ngClass]="pageFixed ? ' xl:col-span-10' : 'xl:col-span-11'">
+  <div class="col-span-12"  
+       [ngClass]="pageFixed ? 'xl:col-span-10 ' : 'xl:col-span-11'">
     <app-navbar></app-navbar>
     <router-outlet></router-outlet>
   </div>

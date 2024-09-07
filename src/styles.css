@@ -18,3 +18,8 @@
 }
 
 
+.scrollSidebar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+    scroll-behavior: smooth;
+  }
